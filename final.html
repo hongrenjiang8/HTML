@@ -1,0 +1,290 @@
+<html>
+    <head><title>B13090074</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #333; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #111; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#ABDCFF,#0396FF);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://th.bing.com/th/id/R.8d48649d1d81ba685cdac31e0b16e9ae?rik=DrDtcFX0FnryZQ&pid=ImgRaw&r=0">
+                  貓戰資訊網
+                </div>
+                <div class="top-nav">
+                  <a href=>登入</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">新手功略</a></li>
+                <li  class="dropdown"><a href="#faculty">稀有度</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">普通</a>
+                        <a href="#faculty">EX</a>
+                        <a href="#faculty">稀有</a>
+                        <a href="#faculty">激稀有</a>
+                        <a href="#faculty">超激稀有</a>
+                        <a href="#faculty">傳說稀有</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">相關資訊</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://image.mycard520.com/globalmycard/member/game/2211-nyanko/1600x1000.jpg" /></li>
+                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider2.JPGhttps://tse1.mm.bing.net/th/id/OIP.z1AybXixu3F0u74qJApuOQHaEc?rs=1&pid=ImgDetMain&o=7&rm=3" /></li>
+                    <li><img src="https://p2.bahamut.com.tw/B/2KU/41/4e54a0f36a4626353d1b8c1da61kho95.PNG?v=1676605790131" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>新手必做三件套</h1>
+            <h1>1.基礎能力跟腳色等級一定要拉滿</h1>
+            <h1>2.金色寶物刷滿</h1>
+            <h1>3.屯罐頭等必中(課長隨意)
+            </h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>稀有度</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="Screenshot_20251230-233516_1.jpg" />
+                    <h3>普通</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="Screenshot_20251230-233333_1_1.jpg" />
+                    <h3>EX</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="Screenshot_20251230-233511_1.jpg" />
+                    <h3>稀有</h3>
+                </a>        
+                  <a class="teacher" href="">
+                    <img src="Screenshot_20251230-233531_1.jpg" />
+                    <h3>激稀有</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="Screenshot_20251230-233540_1.jpg" />
+                    <h3>超激稀有</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="Screenshot_20251230-233548_1.jpg" />
+                    <h3>傳說稀有</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>遊戲開發商:PONOS</b>
+                        <b>遊戲類型:塔防</b>
+                        <b>上市時間(台版):2015/7/21</b>
+                    </div>
+                    <div class="right">
+                        <iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhPxCR-hEzAhMOtRBLv3mtHtdsC8vtutCv6w&s" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+           <div class="footer">
+            &copy;B13090074
+        </div>
+     </body>
+</html>
